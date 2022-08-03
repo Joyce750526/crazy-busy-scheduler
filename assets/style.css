@@ -5,7 +5,7 @@ body {
 }
 
 textarea {
-  background: transparent;
+  background: red;
   border: none;
   resize: none;
   color: #000000;
@@ -13,9 +13,10 @@ textarea {
   padding: 10px;
 }
 
-.row div {
+/* .row div {
   border: 5px solid red;
-}
+}  */
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -32,13 +33,14 @@ textarea {
   text-align: center;
   border-radius: 15px;
 }
-#myid{
+/* #myid{
   background-color: cornflowerblue
-}
+} */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  border: 2px solid yellow;
 }
 .check-button{
   background-color: #77dd77;
