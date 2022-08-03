@@ -1,26 +1,17 @@
-body {
+* body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
 textarea {
-  background: red;
+  background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
 }
-
-/* .row div {
-  border: 5px solid red;
-} */
-
-/* .row time {
-  border: 5px solid red;
-} */
-
 
 .jumbotron {
   text-align: center;
@@ -32,25 +23,30 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+
 }
 
 .time-block {
   text-align: center;
   border-radius: 15px;
+  
 }
-/* #myid{
-  background-color: cornflowerblue
-} */
+
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  border: 2px solid yellow;
+  border-radius: 15px;
 }
-.check-button{
-  background-color: #77dd77;
+.time {
+  border: 1px solid none;
+  border-radius: 15px;
 }
-
+.check-button {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  background-color: lightblue;
+}
 .hour {
   background-color: #ffffff;
   color: #000000;
