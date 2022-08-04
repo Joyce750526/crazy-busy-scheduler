@@ -59,13 +59,11 @@ textarea {
 }
 .check-button {
   border: 1px solid lightgray;
-  border-radius: 15px;
   background-color: lightblue;
 }
 .hour.col-md-2 {
   color: gray;
   background-color: lightblue;
-  border-radius: 15px;
   border-top: 1px dashed #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
