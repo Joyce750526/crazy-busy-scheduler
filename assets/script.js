@@ -27,7 +27,6 @@ $("#5pm .description").val(localStorage.getItem("5pm"));
 $("#6pm .description").val(localStorage.getItem("6pm"));
 })
 
-
 //get current number of hours.
 // loop over time blocks
 
