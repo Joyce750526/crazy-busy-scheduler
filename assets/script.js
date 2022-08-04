@@ -1,6 +1,17 @@
+//Using jQuery
+
 $(document).ready(function () {// tells engine to load 1)html & 2)css first.
-    //display current day & time.
-    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a")); // use of moment.js
+    console.log("Save your task!");
+    //    or
+    $(function () {
+        console.log("Save your task!");
+    });
+
+
+    //display current day & time. Using moment.js library
+    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a")); 
+    
+    
     //assign saveBtn click listener for user input and time stamp??
     $(".saveBtn").on("click", function () {
         //get nearby values.
@@ -32,7 +43,7 @@ $(document).ready(function () {// tells engine to load 1)html & 2)css first.
         // loop over time blocks
         $(".time-block").each(function () {
             var blockHour = parseInt($(this).attr("id").split("hour")[1]);
-            console.log( blockHour, currentHour)
+            console.log(blockHour, currentHour)
 
             //check if we've moved past this time, click into css/html given classes of past, present, or future
             if (blockHour < currentHour) {
