@@ -7,7 +7,6 @@ $(document).ready(function () {// tells engine to load 1)html & 2)css first.
         console.log("Save your task!");
     });
 
-
     //display current day & time. Using moment.js library
     $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a")); 
     
