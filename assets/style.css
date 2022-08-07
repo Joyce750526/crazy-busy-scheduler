@@ -48,15 +48,13 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
   border-top: 1px solid white;
-  border-radius: 15px;
-  text-align: center;
+  height: 80px;
 }
-.time {
+/* .time {
   border: 1px solid none;
   border-radius: 15px;
-}
+} */
 .check-button {
   border: 1px solid lightgray;
   background-color: lightblue;
