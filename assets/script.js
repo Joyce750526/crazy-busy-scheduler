@@ -1,7 +1,7 @@
-//display current day & time. Using moment.js library
+//Use moment.js library to display current day & time.(24 hour format!)
 $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
-//When the saveBtn is clicked, we need to save the values from the input in this local storage, with a key name that matched the hour timeblock, 
+//saveBtn function to save the inputvalue in the local stprage
 $(".saveBtn").on("click", function () {
     console.log(this);
     var inputvalue = $(this).siblings(".description").val();
@@ -12,10 +12,12 @@ $(".saveBtn").on("click", function () {
 
     var inputEl = $(this).siblings(".description")
     console.log(inputEl);
-    //jQuery to set items in the local storage
-    localStorage.setItem(keyvalue, inputvalue);
 
-    // //jQuery to get the corrent ID of a data from the local storage. 
+    //Use jQuery to set items in the local storage
+    localStorage.setItem(keyvalue, inputvalue);
+    var inputEl =localStorage.getItem("keyvalue");
+
+
     // Reference link: https://www.codegrepper.com/code-examples/javascript/javascript+localstorage+getitem //
     // Refeeence link: https://www.w3schools.com/jsref/prop_win_localstorage.asp//
     $("#9am .description").val(localStorage.getItem("9am"));
@@ -30,20 +32,15 @@ $(".saveBtn").on("click", function () {
     $("#18pm .description").val(localStorage.getItem("6pm"));
 })
 
-//get current number of hours.
-// loop over time blocks
-
+//Use moment.js fomate to create this function to get current number of hours.
 function hourTracker() {
-    //get current number of hours.
-    var currentHour = moment().hour(); // use of moment.js
-
+    var currentHour = moment().hour();
 
     // loop over time blocks
     $(".time-block").each(function () {
         var blockHour = parseInt($(this).attr("id").split("-")[1]);
         console.log(blockHour, currentHour);
 
-        //check if we've moved past this time, click into css/html given classes of past, present, or future
         if (blockHour < currentHour) {
             $(this).find("input").addClass("past");
         } else if (blockHour === currentHour) {
@@ -59,8 +56,8 @@ function hourTracker() {
         }
     });
 }
-
-hourTracker(); //re-run 
+// Go back to the hourTracker function
+hourTracker();
 
 
 
