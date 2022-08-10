@@ -56,6 +56,13 @@ function hourTracker() {
         }
     });
 }
+const checkStorage = () => {
+    // check storage, if true set input values 
+}
+
+checkStorage();
+
+
 // Go back to the hourTracker function
 hourTracker();
 
