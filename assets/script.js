@@ -18,18 +18,7 @@ $(".saveBtn").on("click", function () {
     var inputEl =localStorage.getItem("keyvalue");
 
 
-    // Reference link: https://www.codegrepper.com/code-examples/javascript/javascript+localstorage+getitem //
-    // Refeeence link: https://www.w3schools.com/jsref/prop_win_localstorage.asp//
-    $("#9am .description").val(localStorage.getItem("9am"));
-    $("#10am .description").val(localStorage.getItem("10am"));
-    $("#11am .description").val(localStorage.getItem("11am"));
-    $("#12pm .description").val(localStorage.getItem("12pm"));
-    $("#13pm .description").val(localStorage.getItem("1pm"));
-    $("#14pm .description").val(localStorage.getItem("2pm"));
-    $("#15pm .description").val(localStorage.getItem("3pm"));
-    $("#16pm .description").val(localStorage.getItem("4pm"));
-    $("#17pm .description").val(localStorage.getItem("5pm"));
-    $("#18pm .description").val(localStorage.getItem("6pm"));
+    
 })
 
 //Use moment.js fomate to create this function to get current number of hours.
@@ -56,7 +45,19 @@ function hourTracker() {
         }
     });
 }
-const checkStorage = () => {
+function checkStorage ()  {
+    // Reference link: https://www.codegrepper.com/code-examples/javascript/javascript+localstorage+getitem //
+    // Refeeence link: https://www.w3schools.com/jsref/prop_win_localstorage.asp//
+    $("#9am").val(localStorage.getItem("hour-9am"));
+    $("#10am .description").val(localStorage.getItem("hour-10am"));
+    $("#11am .description").val(localStorage.getItem("hour-11am"));
+    $("#12pm .description").val(localStorage.getItem("hour-12pm"));
+    $("#13pm .description").val(localStorage.getItem("hour-13pm"));
+    $("#14pm .description").val(localStorage.getItem("hour-14pm"));
+    $("#15pm .description").val(localStorage.getItem("hour-15pm"));
+    $("#16pm .description").val(localStorage.getItem("hour-16pm"));
+    $("#17pm .description").val(localStorage.getItem("hour-17pm"));
+    $("#18pm .description").val(localStorage.getItem("hour-18pm"));
     // check storage, if true set input values 
 }
 
